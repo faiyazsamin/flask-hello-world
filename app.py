@@ -14,9 +14,10 @@ def extractor():
     # making requests instance
     for items in url:
         reqs = requests.get(items)
-        return items
-#         soup = BeautifulSoup(reqs.text, 'html.parser')
-#         title = soup.find("meta", property="og:title")
+        
+        soup = BeautifulSoup(reqs.text, 'html.parser')
+        title = soup.find("meta", property="og:title")
+        return title
 #         all_data = all_data +"\n"+title["content"] if title else "No meta title given"
 #         # print(title["content"] if title else "No meta title given")
 #     return all_data
