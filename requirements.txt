@@ -1,4 +1,4 @@
-anyio==3.6.2
+anyio==4.4.0
 app==0.0.1
 beautifulsoup4==4.12.2
 certifi==2022.12.7
